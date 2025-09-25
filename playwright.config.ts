@@ -33,8 +33,8 @@ export default defineConfig({
     trace: 'on-first-retry',
     headless: true, 
     baseURL: process.env.BASE_URL,
-     video: 'on'
-  },
+    screenshot: 'on'
+    },
 
   /* Configure projects for major browsers */
   projects: [
