@@ -36,6 +36,26 @@ BASE_API=http://localhost:3333
 
 4. Execute os testes
 
+⚙️ Pré-requisitos para execução dos testes
+
+Antes de rodar os testes E2E com Playwright, é necessário iniciar os serviços da aplicação:
+
+### 1️⃣ Iniciar a API
+
+```bash
+cd /c/QAx/playwright-mark/apps/api/
+yarn dev
+
+2️⃣ Iniciar a interface Web
+
+Em uma nova aba do terminal:
+cd /c/QAx/playwright-mark/apps/web/
+yarn dev
+
+Após isso, os testes podem ser executados normalmente com:
+npx playwright test
+
+
 npx playwright test
 
 🔄 Integração Contínua
